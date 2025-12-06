@@ -11,7 +11,7 @@ class SocketManager {
             this.disconnect();
         }
 
-        this.socket = io('http://localhost:5000', {
+        this.socket = io('https://chat-backend-b6gl.onrender.com', {
             auth: { token },
             transports: ['polling', 'websocket'],
             withCredentials: false,
